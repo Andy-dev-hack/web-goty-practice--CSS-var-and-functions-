@@ -1,0 +1,212 @@
+body {
+  font-family: "Montserrat";
+  margin: 0px;
+  background: linear-gradient(180deg, #233142, #f95959);
+}
+
+ul {
+  list-style: none;
+}
+
+.logo_img {
+  width: 50px;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  border-top: 2px solid #f95959;
+  border-bottom: 2px solid #f95959;
+}
+@media screen and (max-width: 992px) {
+  .barra {
+    flex-direction: column;
+  }
+}
+.barra a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #635532;
+}
+
+.Lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+@media screen and (max-width: 992px) {
+  .Lista {
+    flex-direction: column;
+  }
+}
+
+.container {
+  padding: 15px;
+}
+
+.header {
+  color: #f95959;
+  font-size: 30px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header .video {
+  width: 90%;
+  height: 500px;
+}
+.header .goty {
+  width: 200%;
+}
+
+.separador {
+  margin-top: 40px;
+  text-align: center;
+  word-spacing: 5px;
+  background-color: #e3e3e3;
+  background-size: cover;
+  text-align: center;
+  border: 1px solid;
+  border-top: 2px solid #f95959;
+  border-bottom: 2px solid #f95959;
+}
+
+.main {
+  margin-top: 5px;
+  height: 600px;
+  background-color: #7042c8;
+  background: url("https://cdn.thegameawards.com/1/2024/12/TGA24_FM_1556-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+.article {
+  background: linear-gradient(180deg, #233142, #f95959);
+  padding: 20px;
+  text-align: center;
+  color: #e3e3e3;
+  font-size: 2em;
+}
+
+.columnas {
+  background-color: #7096c8;
+  background-size: cover;
+  text-align: center;
+  border: 1px solid;
+  color: #e3e3e3;
+  text-align: center;
+}
+
+.column-block {
+  display: flex;
+  justify-content: spacearound;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.columna {
+  background-color: #233142;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  border-top: 2px solid #f95959;
+  border-bottom: 2px solid #f95959;
+}
+
+.award {
+  margin: 10px 10px;
+  width: 300px;
+}
+
+/* Listas / tablas */
+.lista-section {
+  background-color: #233142;
+  background-size: cover;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.lista_block, .table_block {
+  flex: 1 1 320px;
+  background: linear-gradient(180deg, #e3e3e3, #7096c8);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.styled-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--muted);
+}
+
+.styled-list li {
+  padding: 8px;
+  background: #7096c8;
+  border-radius: 8px;
+}
+
+.selector-section {
+  margin-top: 1rem;
+  padding: 0.6rem 0;
+  background-color: #233142;
+}
+
+.selector-block {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selector {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 5px;
+  background-color: #f95959;
+  background-size: cover;
+  text-align: center;
+  border: 1px solid;
+}
+.footer a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #635532;
+}
+
+#cabecera {
+  background-color: #7096c8;
+  padding: 15px;
+}
+
+#logo {
+  width: 10%;
+}
+
+#separador2 {
+  background-color: #7096c8;
+}
+
+#snoop {
+  border-top: 2px solid #f95959;
+  border-bottom: 2px solid #f95959;
+  margin-top: 20px;
+  max-width: 900px;
+}

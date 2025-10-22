@@ -1,0 +1,241 @@
+// variables
+$padding: 15px;
+
+$blueLigth:rgb(112, 150, 200);
+$blueDark: #233142;
+$lightRed:#f95959;
+$grey:#e3e3e3;
+
+// funciones
+@mixin background(){
+  background: linear-gradient(180deg, $blueDark, $lightRed);
+}
+@mixin center() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  @media screen and(max-width:992px) {
+  flex-direction:column;    
+  }
+}
+
+
+@mixin fxRed(){
+  
+  background-color:$lightRed;
+  background-size:cover;
+  text-align:center;
+  border:1px solid 
+  
+}
+@mixin fxGrey(){
+  
+  background-color:$grey;
+  background-size:cover;
+  text-align:center;
+  border:1px solid 
+  
+}
+@mixin fxBlue(){
+  
+  background-color: $blueLigth;
+  background-size:cover;
+  text-align:center;
+  border:1px solid 
+  
+}
+@mixin href(){
+  
+   font-weight:600;
+   text-decoration:none;
+   color: rgb(99, 85, 50);
+  
+}
+@mixin border(){
+  border-top: 2px solid $lightRed;
+  border-bottom: 2px solid $lightRed;
+}
+
+@mixin fondo_img($img){
+  background:url($img);
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+}
+@mixin img-art($img){
+  
+}
+
+
+// etiquetas
+body {
+  font-family:'Montserrat';
+  margin: 0px;
+  @include background();
+}
+ul {
+  list-style: none;
+}
+// clases
+.logo_img {
+  width: 50px;
+}
+.barra {
+ 
+  @include center();
+   a{
+   @include href();
+  }
+  @include border();
+ 
+}
+.Lista {
+  @include center();
+}
+
+.container{
+  padding:$padding;
+}
+
+.header{
+  color: $lightRed;
+  font-size:30px;
+  display:flex;
+  justify-items:center;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  .video{
+    width:90%;
+    height:500px;
+  }
+  .goty{
+    width:200%;
+  }
+}
+.separador{
+  margin-top:40px;
+  text-align:center;
+  word-spacing:5px;
+  @include fxGrey();
+  @include border();
+}
+
+.main{
+  margin-top:5px;
+  height:600px;
+  background-color:rgb(112, 66, 200);
+  @include fondo_img('https://cdn.thegameawards.com/1/2024/12/TGA24_FM_1556-scaled.jpg');
+  height:1000px;
+}
+
+.article{
+  @include background();
+  padding:20px;
+  text-align:center;
+  color:$grey;
+  font-size:2em;
+}
+
+.columnas{
+  @include fxBlue();
+  color: $grey;
+  text-align:center;
+ }
+  .column-block{
+    display:flex;
+    justify-content:spacearound;
+    flex-direction:row;
+    margin:10px;
+   }
+    .columna{
+      background-color:$blueDark;
+      width:400px;
+      margin:10px;
+      padding:10px;
+      @include border();
+     }
+      .award{
+      margin:10px 10px;  
+      width:300px;
+      }
+    
+/* Listas / tablas */
+.lista-section{ 
+  background-color:$blueDark;
+  background-size:cover;
+  display:flex; 
+  gap:1rem;
+  
+  flex-wrap:wrap;
+  align-items:flex-start; }
+
+.lista_block, .table_block{ 
+  flex:1 1 320px; 
+  background: linear-gradient(180deg, $grey, $blueLigth); 
+  padding:1rem; 
+  border-radius:12px; 
+  border:1px solid rgba(255,255,255,0.03); 
+}
+.styled-list{ 
+  list-style:none; 
+  display:flex; 
+  flex-direction:column;
+  gap:0.5rem; 
+  color:var(--muted); 
+}
+.styled-list li{ 
+  padding:8px; 
+  background: $blueLigth; 
+  border-radius:8px; }
+// SELECTORES
+
+.selector-section{ 
+  margin-top:1rem; 
+  padding:0.6rem 0;
+  background-color:$blueDark;
+}
+.selector-block{ 
+  display:flex; 
+  gap:0.75rem; 
+  flex-wrap:wrap; 
+  justify-content:center; 
+}
+.selector{ 
+  padding:8px 10px; 
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.05); 
+  background:transparent; color:#fff; font-size:1rem; }
+
+
+// footer
+
+.footer{
+  margin-top:5px;
+  
+  @include fxRed();
+  a{
+   @include href();
+  }
+    
+}
+// id
+#cabecera {
+  background-color: $blueLigth;
+  padding: $padding;
+}
+#logo{
+  width:10%;
+}
+#footer{
+  
+}
+#separador2{
+  background-color: $blueLigth;
+}
+#snoop{
+  @include border();
+  margin-top:20px;
+  max-width:900px;
+}
